@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Itimiso</title>
+<meta name="description" content="An interactive story of NASA equipment left behind on the Moon, Mars, and deep space.">
+<link rel="stylesheet" href="style.css"></head>
+<body data-page="index">
+<main>
+<section class="hero">
+<div class="hero-inner">
+<h1>Abandoned<br>but Not<br>Forgotten</h1>
+<p>Since the 1960s, NASA has left equipment on the Moon, Mars, and in interstellar space. Every object has a story, and the science it left behind is still in use today.</p>
+<div><a class="btn gold" href="bulan.html">Start with the Moon</a><a class="btn" href="mars.html">Explore Mars</a></div>
+<div class="chips"><span>🚀 15 missions</span><span>🌕 3 worlds</span><span>⭐ 60+ years of stories</span></div>
+</div>
+<div class="shint">Scroll<i></i></div>
+<svg class="solar" viewBox="0 0 400 400" aria-hidden="true">
+<defs>
+<radialGradient id="sunG" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fff8d6"/><stop offset="45%" stop-color="#ffe066"/><stop offset="100%" stop-color="#f5a623"/>
+</radialGradient>
+<radialGradient id="corG" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="rgba(255,210,63,.5)"/><stop offset="100%" stop-color="rgba(255,210,63,0)"/>
+</radialGradient>
+<radialGradient id="eG" cx="34%" cy="30%" r="80%">
+<stop offset="0%" stop-color="#8fd3ff"/><stop offset="45%" stop-color="#2e7dd1"/><stop offset="100%" stop-color="#0b2a6b"/>
+</radialGradient>
+<radialGradient id="mcG" cx="34%" cy="30%" r="85%">
+<stop offset="0%" stop-color="#ddd6c4"/><stop offset="55%" stop-color="#a89f8d"/><stop offset="100%" stop-color="#5c5546"/>
+</radialGradient>
+<radialGradient id="mrG" cx="34%" cy="30%" r="85%">
+<stop offset="0%" stop-color="#ffb187"/><stop offset="50%" stop-color="#d96a3b"/><stop offset="100%" stop-color="#7a2e18"/>
+</radialGradient>
+<radialGradient id="vgG" cx="34%" cy="30%" r="85%">
+<stop offset="0%" stop-color="#ffe9c2"/><stop offset="55%" stop-color="#d9a86b"/><stop offset="100%" stop-color="#8a6236"/>
+</radialGradient>
+<radialGradient id="juG" cx="34%" cy="30%" r="85%">
+<stop offset="0%" stop-color="#f5d9b0"/><stop offset="55%" stop-color="#c8905e"/><stop offset="100%" stop-color="#7c4a24"/>
+</radialGradient>
+<radialGradient id="saG" cx="34%" cy="30%" r="85%">
+<stop offset="0%" stop-color="#f7e7bd"/><stop offset="60%" stop-color="#d9bc82"/><stop offset="100%" stop-color="#8f7440"/>
+</radialGradient>
+<radialGradient id="urG" cx="34%" cy="30%" r="85%">
+<stop offset="0%" stop-color="#c9f2ef"/><stop offset="60%" stop-color="#7fd4d4"/><stop offset="100%" stop-color="#33787f"/>
+</radialGradient>
+<radialGradient id="neG" cx="34%" cy="30%" r="85%">
+<stop offset="0%" stop-color="#9fc0ff"/><stop offset="60%" stop-color="#4a6fe3"/><stop offset="100%" stop-color="#1c2f8a"/>
+</radialGradient>
+</defs>
+
+<g transform="rotate(-14 200 200)">
+<circle class="orbit" cx="200" cy="200" r="56"/>
+<circle class="orbit" cx="200" cy="200" r="72"/>
+<circle class="orbit" cx="200" cy="200" r="88"/>
+<circle class="orbit" cx="200" cy="200" r="104"/>
+<circle class="orbit" cx="200" cy="200" r="144"/>
+<circle class="orbit" cx="200" cy="200" r="164"/>
+<circle class="orbit" cx="200" cy="200" r="178"/>
+<circle class="orbit" cx="200" cy="200" r="192"/>
+
+<circle class="sun glow" cx="200" cy="200" r="16" fill="url(#sunG)"/>
+<circle cx="200" cy="200" r="27" fill="url(#corG)">
+<animate attributeName="r" values="24;31;24" dur="4s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values=".8;.4;.8" dur="4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="200" cy="200" r="34" fill="url(#corG)" opacity=".5">
+<animate attributeName="r" values="31;40;31" dur="6s" repeatCount="indefinite"/>
+</circle>
+
+<g class="orb o1"><circle class="planet" cx="256" cy="200" r="4" fill="url(#mcG)"/></g>
+
+<g class="orb o8"><circle class="planet" cx="272" cy="200" r="6" fill="url(#vgG)"/></g>
+
+<g class="orb o2"><circle class="planet" cx="288" cy="200" r="7.5" fill="url(#eG)"/>
+<circle r="11" cx="288" cy="200" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="1"/>
+<g><animateTransform attributeName="transform" type="rotate" from="0 288 200" to="360 288 200" dur="6s" repeatCount="indefinite"/><circle cx="299" cy="200" r="2" fill="#cfcabd"/></g></g>
+
+<g class="orb o3"><circle class="planet" cx="304" cy="200" r="5.5" fill="url(#mrG)"/></g>
+
+<circle cx="200" cy="200" r="124" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="7" stroke-dasharray="1 5" opacity=".5"/>
+
+<g class="orb o4"><g transform="rotate(140 344 200)"><ellipse cx="344" cy="200" rx="20" ry="5.5" fill="none" stroke="rgba(240,222,170,.75)" stroke-width="2"/></g>
+<circle class="planet" cx="344" cy="200" r="11" fill="url(#juG)"/></g>
+
+<g class="orb o5"><g transform="rotate(-60 364 200)"><ellipse cx="364" cy="200" rx="16" ry="4.5" fill="none" stroke="rgba(247,231,189,.65)" stroke-width="2"/></g>
+<circle class="planet" cx="364" cy="200" r="9" fill="url(#saG)"/></g>
+
+<g class="orb o6"><circle class="planet" cx="378" cy="200" r="6.5" fill="url(#urG)"/></g>
+
+<g class="orb o7"><circle class="planet" cx="392" cy="200" r="6" fill="url(#neG)"/></g>
+</g>
+</svg>
+</section>
+
+<div class="mq"><div></div></div>
+
+<section class="ch">
+<span class="tag">01 · Numbers that tell a story</span><h2 class="rv">The traces left behind</h2>
+<div class="stats rv">
+<div class="stat"><b data-n="6">0</b><span>crewed Apollo landing sites</span></div>
+<div class="stat"><b data-n="12">0</b><span>astronauts have walked on the Moon</span></div>
+<div class="stat"><b data-n="14">0</b><span>years Opportunity survived on Mars</span></div>
+<div class="stat"><b data-n="72">0</b><span>Ingenuity flights</span></div>
+</div>
+</section>
+
+<section class="ch">
+<span class="tag">02 · Why leave them behind?</span><h2 class="rv">Coming home costs more than going</h2>
+<p class="rv-l">Bringing a lander home means carrying extra fuel, and that makes the spacecraft far heavier. That is why engineers chose to leave behind equipment that had finished its job, and instead bring home something more valuable: rocks and data.</p>
+<p class="rv-l">Some of that equipment then went silent. Others, like the laser mirrors on the Moon or Voyager in interstellar space, kept working for decades.</p>
+<div class="quote rv-r">One kilogram left behind meant one kilogram of moon rock that could come home.</div>
+</section>
+
+<section class="ch">
+<span class="tag">03 · Timeline</span><h2 class="rv">Six decades of equipment beyond Earth</h2>
+<div id="tl"></div>
+</section>
+
+<section class="ch">
+<span class="tag">04 · Did you know?</span><h2 class="rv">Small facts, big surprises</h2>
+<div class="dgrid">
+<div class="dk rv"><b>3.8 cm</b><span>the Moon drifts away from Earth every year, measured by the mirrors left by Apollo astronauts.</span></div>
+<div class="dk rv rv-d1"><b>13 km/h</b><span>top speed of the Lunar Roving Vehicle, the last car humans ever drove on another world.</span></div>
+<div class="dk rv rv-d2"><b>90 → 5,111</b><span>sols Opportunity was designed for versus what it actually survived, a 56x bonus mission.</span></div>
+<div class="dk rv rv-d3"><b>22 h</b><span>how long a radio signal from Voyager 1 takes to reach Earth, travelling at the speed of light.</span></div>
+</div>
+</section>
+
+<section class="ch">
+<span class="tag">05 · Choose your destination</span><h2 class="rv">Three worlds, three stories</h2>
+<div class="stats rv">
+<div class="stat"><b>Moon</b><span>Apollo's footprints and mirrors still in use</span><br><a class="btn gold" href="bulan.html">Open</a></div>
+<div class="stat"><b>Mars</b><span>Rovers, landers, and the first helicopter</span><br><a class="btn gold" href="mars.html">Open</a></div>
+<div class="stat"><b>Space</b><span>Voyager and the silent wanderers</span><br><a class="btn gold" href="antariksa.html">Open</a></div>
+</div>
+</section>
+</main>
+<script src="app.js"></script>
+</body></html>

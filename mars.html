@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mars | Abandoned but Not Forgotten</title>
+<link rel="stylesheet" href="style.css"></head>
+<body data-page="mars" data-cat="mars">
+<main>
+<section class="hero">
+<div class="hero-inner">
+<span class="tag">Chapter 2</span>
+<h1>Mars:<br>The Dusty<br>Neighbor</h1>
+<p>The red planet is home to robots that worked far longer than anyone predicted. Some are still waiting right where they stopped.</p>
+<div class="chips"><span>🤖 6 robots</span><span>🚁 72 flights</span><span>🛰️ 2 still listening</span></div>
+</div>
+<div class="shint">Scroll<i></i></div>
+<svg class="solar" viewBox="0 0 400 400" aria-hidden="true">
+<defs>
+<radialGradient id="maG" cx="36%" cy="30%" r="82%">
+<stop offset="0%" stop-color="#f2a173"/><stop offset="45%" stop-color="#d96a3b"/><stop offset="100%" stop-color="#6e2913"/>
+</radialGradient>
+<radialGradient id="maShade" cx="68%" cy="74%" r="95%">
+<stop offset="0%" stop-color="rgba(5,6,13,.5)"/><stop offset="55%" stop-color="rgba(5,6,13,0)"/>
+</radialGradient>
+<radialGradient id="capG" cx="50%" cy="30%" r="60%">
+<stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+</radialGradient>
+<radialGradient id="mcr1" cx="50%" cy="42%" r="60%">
+<stop offset="0%" stop-color="#a84a26"/><stop offset="100%" stop-color="rgba(168,74,38,0)"/>
+</radialGradient>
+<radialGradient id="mcr2" cx="50%" cy="42%" r="60%">
+<stop offset="0%" stop-color="#8f3a1c"/><stop offset="100%" stop-color="rgba(143,58,28,0)"/>
+</radialGradient>
+</defs>
+
+<g opacity=".75">
+<circle cx="50" cy="52" r="1.1" fill="#fff"><animate attributeName="opacity" values=".2;1;.2" dur="3.4s" repeatCount="indefinite"/></circle>
+<circle cx="350" cy="70" r="1" fill="#fff"><animate attributeName="opacity" values="1;.3;1" dur="4.2s" repeatCount="indefinite"/></circle>
+<circle cx="110" cy="24" r=".9" fill="#fff"><animate attributeName="opacity" values=".3;.9;.3" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="330" cy="140" r="1" fill="#fff"><animate attributeName="opacity" values=".7;.2;.7" dur="3s" repeatCount="indefinite"/></circle>
+</g>
+
+<circle cx="230" cy="235" r="122" fill="url(#maG)"/>
+<circle cx="230" cy="235" r="122" fill="url(#maShade)"/>
+
+<path d="M138 208 Q190 192 236 202 Q286 212 328 198" stroke="#7a2e18" stroke-width="9" fill="none" stroke-linecap="round" opacity=".8"/>
+<path d="M150 220 Q200 208 246 216 Q284 222 318 212" stroke="#5c1f0e" stroke-width="4" fill="none" stroke-linecap="round" opacity=".65"/>
+
+<ellipse cx="230" cy="128" rx="34" ry="12" fill="url(#capG)" opacity=".9"/>
+
+<g opacity=".8">
+<circle cx="180" cy="170" r="11" fill="url(#mcr1)"/>
+<circle cx="290" cy="260" r="17" fill="url(#mcr2)"/>
+<circle cx="205" cy="300" r="8" fill="url(#mcr1)"/>
+<circle cx="315" cy="195" r="7" fill="url(#mcr2)"/>
+<circle cx="160" cy="255" r="13" fill="url(#mcr2)"/>
+</g>
+
+<circle cx="230" cy="235" r="122" fill="none" stroke="rgba(255,190,140,.25)" stroke-width="1.5"/>
+
+<circle class="orbit" cx="230" cy="235" r="136"/>
+<circle class="orbit" cx="230" cy="235" r="146"/>
+<g><animateTransform attributeName="transform" type="rotate" from="0 230 235" to="360 230 235" dur="18s" repeatCount="indefinite"/><circle class="planet" cx="376" cy="235" r="4" fill="#b9a58f"/><circle cx="376" cy="235" r="7" fill="none" stroke="rgba(185,165,143,.25)" stroke-width="1"/></g>
+<g><animateTransform attributeName="transform" type="rotate" from="0 230 235" to="360 230 235" dur="40s" repeatCount="indefinite"/><circle class="planet" cx="94" cy="235" r="3" fill="#9c8a76"/></g>
+</svg>
+</section>
+
+<section class="ch">
+<span class="tag">01 · Story</span><h2 class="rv">The day Opportunity stopped talking</h2>
+<p class="rv-l">In 2018, a dust storm engulfed Mars and blotted out the sky above Opportunity. Its solar panels were starved of light. Its final message read like a report of a weak battery and fading light.</p>
+<p class="rv-l">For months, the team on Earth sent thousands of commands. No answer came. In February 2019, the mission was declared over. A robot designed to work for 90 sols had worked for about 5,000.</p>
+<div class="quote rv-r">One sol is one day on Mars, roughly 24 hours and 40 minutes.</div>
+</section>
+
+<section class="ch">
+<span class="tag">02 · Explore the equipment</span><h2 class="rv">The robots of the red planet</h2>
+<div id="cards"></div>
+</section>
+
+<section class="ch">
+<span class="tag">03 · What they found</span><h2 class="rv">A Mars that was once wet</h2>
+<p class="rv-l">The rovers and landers found minerals that only form with the help of water, the floor of an ancient lake, and marsquakes that help reveal what lies inside the planet. All of it points the way for where the next mission should go.</p>
+<div class="steps">
+<div class="step rv"><b>1</b><h3>Ancient river deltas</h3><p>Orbiters and rovers mapped deltas and shorelines that could only be carved by flowing water.</p></div>
+<div class="step rv rv-d1"><b>2</b><h3>Lake-floor chemistry</h3><p>Curiosity drilled rocks in Gale Crater that held the ingredients of life as we know it.</p></div>
+<div class="step rv rv-d2"><b>3</b><h3>The pulse of the planet</h3><p>InSight listened for marsquakes and measured the size of the core, mapping the interior for the first time.</p></div>
+</div>
+<div class="stats rv" style="margin-top:1.6rem">
+<div class="stat"><b data-n="83">0</b><span>sols Sojourner worked</span></div>
+<div class="stat"><b data-n="45">0</b><span>km traveled by Opportunity</span></div>
+<div class="stat"><b data-n="2012">0</b><span>Curiosity arrived at Mars</span></div>
+</div>
+<a class="btn gold" href="antariksa.html">Onward to Space</a>
+</section>
+</main>
+<script src="app.js"></script>
+</body></html>
